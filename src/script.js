@@ -70,6 +70,7 @@ const generateGalaxy = () =>
         const randomY = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() < 0.5 ? 1 : - 1) * parameters.randomness * radius
         const randomZ = Math.pow(Math.random(), parameters.randomnessPower) * (Math.random() < 0.5 ? 1 : - 1) * parameters.randomness * radius
 
+        // Tweak the first and last positions to use Math.tan to create the outward facing direction instead of the Math.cos and Math.sin from the lesson code
         positions[i3    ] = Math.tan(branchAngle)
         positions[i3 + 1] = 0
         positions[i3 + 2] = Math.tan(branchAngle)
